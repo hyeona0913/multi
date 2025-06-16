@@ -1,0 +1,5 @@
+* 명령팔레트 (ctrl + shift + p)
+* 파일열기(찾기) (ctrl + p)
+* 터미널 (ctrl + `)
+* Setting (ctrl + ,)
+* 화면 분할 (ctrl + \)
