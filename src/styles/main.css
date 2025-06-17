@@ -1,6 +1,5 @@
 /* 컨테이너 - auto 마진과 float 레이아웃*/
 .container {
-  background-color: yellow;
   --size: 940px;
 
   min-width: calc(var(--size) + 20px);
@@ -20,7 +19,9 @@
 
   .main {
     padding: 28px 16px;
-    display: flow;
+    display: flow-root;
+    min-height: 450px;
+    min-inline-size: 450px;
 
     .group {
       float: left;
@@ -51,21 +52,19 @@
   }
 }
 
-/* 헤더 */
-.header {
+/* .header {
   background-color: pink;
   height: 10vh;
   block-size: 10vh;
 }
 
-/* 비주얼 */
 .visual {
   background-color: lime;
   height: 10vh;
   block-size: 10vh;
 }
 
-/* 메인 */
+
 .main {
   background-color: skyblue;
   height: 60vh;
@@ -76,21 +75,21 @@
   }
 }
 
-/* 슬로건 */
+
 .slogan {
   background-color: orange;
   height: 10vh;
   block-size: 10vh;
 }
 
-/* 푸터 컨테이너 */
+
 .footer-container {
   background-color: gray;
 }
 
-/* 푸터 */
+
 .footer {
   background-color: silver;
   height: 10vh;
   block-size: 10vh;
-}
+} */
