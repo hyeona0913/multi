@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>헤딩 컴포넌트</title>
+    <title>입력서식 컴포넌트</title>
     <link rel="shortcut icon" href="/src/assets/favicon/webcafe.ico" type="image/x-icon" />
     <link rel="icon" href="/src/assets/favicon/webcafe.png" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" />
@@ -11,7 +11,7 @@
     <style>
       .component-wrapper {
         margin: 20px;
-        padding: 20px 50px 20px 20px;
+        padding: 20px 80px 20px 20px;
         border: 2px solid currentColor;
         position: relative;
 
@@ -27,27 +27,15 @@
         }
       }
     </style>
-    <script type="module" src="/src/components/copy-component.js"></script>
+    <script type="module" src="./../copy-component.js"></script>
   </head>
   <body>
     <div class="component-wrapper">
-      <span class="heading text-large">콘텐츠 제목</span>
-      <button type="button" class="copy">복사</button>
-    </div>
-    <div class="component-wrapper">
-      <span class="heading text-large accent-color">콘텐츠 제목</span>
-      <button type="button" class="copy">복사</button>
-    </div>
-    <div class="component-wrapper">
-      <span class="heading text-medium">콘텐츠 제목</span>
-      <button type="button" class="copy">복사</button>
-    </div>
-    <div class="component-wrapper">
-      <span class="heading text-medium primary-color">콘텐츠 제목</span>
-      <button type="button" class="copy">복사</button>
-    </div>
-    <div class="component-wrapper">
-      <span class="heading text-large">콘텐츠 <span class="primary-color">제목</span></span>
+      <div class="input">
+        <label for="id-num-1">레이블</label>
+        <input type="text" name="name-num-1" id="id-num-1" required placeholder="플레이스 홀더" />
+      </div>
+
       <button type="button" class="copy">복사</button>
     </div>
   </body>
