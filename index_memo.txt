@@ -3,3 +3,10 @@
 * 터미널 (ctrl + `)
 * Setting (ctrl + ,)
 * 화면 분할 (ctrl + \)
+* 코드복사 (shift + alt + cursor 위치에서 아래방향키) 
+* vscode 코딩을 쉽게 활용하는 emmet사이트 참고
+
+*snippet 등록 방법 :html 페이지에서 명령팔레트 검색에서 Snippets:confing
+ure snippet 엔터 multi.code-snippets(global)
+
+* markup시 버튼의 경우 <button> 테그 사용을 권장하며 <div>를 사용할 경우 - 자바스크립트에서 keyup 사용, keydown 사용하면 안됨 접근성 에러남
