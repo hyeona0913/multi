@@ -3,8 +3,8 @@
   background-color: yellow;
   --size: 940px;
 
-  min-width: 960px;
-  min-inline-size: 960px;
+  min-width: calc(var(--size) + 20px);
+  min-inline-size: calc(var(--size) + 20px);
   display: grid;
   grid-template-columns: [full-start] 1fr [content-start] var(--size) [content-end] 1fr[full-end];
 
