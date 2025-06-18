@@ -134,3 +134,15 @@
     }
   }
 }
+
+/* 웹 관련 용어 */
+.term {
+  margin-top: 20px;
+
+  h2 {
+    margin-bottom: 16px;
+  }
+  .card {
+    margin-top: 12px;
+  }
+}
