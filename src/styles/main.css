@@ -116,3 +116,21 @@
     }
   }
 }
+
+/* 유효섬 검사 배너 링크 */
+.validation {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .gradient {
+    --size: 38px;
+    --icon-size: 16px;
+
+    &:hover,
+    &:focus {
+      color: var(--primary);
+    }
+  }
+}

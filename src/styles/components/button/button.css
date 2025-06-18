@@ -9,18 +9,24 @@
   font-size: var(--text-size);
   line-height: 1.5;
   letter-spacing: -0.02em;
-  display: flex;
+  display: inline-flex;
+  align-items: center;
 
   &.primary {
     background-color: var(--primary);
+
+    &:focus-visible {
+      --ring-color: var(--accent-green);
+    }
   }
 }
 
 .gradient {
-  --start: var(--gray-600);
-  --end: var(--gray-700);
+  --start: var(--gray-400);
+  --end: var(--gray-500);
   --angle: 180deg;
   --size: 24px;
+  --icon-size: 12px;
 
   display: inline-flex;
   align-items: center;
@@ -36,8 +42,8 @@
   &.icon {
     background-image: url(/src/assets/webcafe/validation_icon.png), linear-gradient(var(--angle), var(--start), var(--end));
     background-repeat: no-repeat, repeat;
-    background-position: 12px 50%, 0 0;
-    padding-left: 32px;
-    background-size: 12px 12px, 100%;
+    background-position: calc(var(--icon-size) / 2 + 4px) 50%, 0 0;
+    padding-left: calc(var(--icon-size) * 2);
+    background-size: var(--icon-size), 100%;
   }
 }
