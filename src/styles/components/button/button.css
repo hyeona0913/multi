@@ -29,6 +29,9 @@
   background-color: var(--end);
   background-image: linear-gradient(var(--angle), var(--start), var(--end));
   border-radius: calc(var(--size) / 2);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
 
   &.icon {
     background-image: url(/src/assets/webcafe/validation_icon.png), linear-gradient(var(--angle), var(--start), var(--end));
