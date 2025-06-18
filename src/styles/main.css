@@ -52,44 +52,7 @@
   }
 }
 
-/* .header {
-  background-color: pink;
-  height: 10vh;
-  block-size: 10vh;
+/*  로그인 */
+.login {
+  background-color: orangered;
 }
-
-.visual {
-  background-color: lime;
-  height: 10vh;
-  block-size: 10vh;
-}
-
-
-.main {
-  background-color: skyblue;
-  height: 60vh;
-  block-size: 60vh;
-
-  .group {
-    background-color: hotpink;
-  }
-}
-
-
-.slogan {
-  background-color: orange;
-  height: 10vh;
-  block-size: 10vh;
-}
-
-
-.footer-container {
-  background-color: gray;
-}
-
-
-.footer {
-  background-color: silver;
-  height: 10vh;
-  block-size: 10vh;
-} */
