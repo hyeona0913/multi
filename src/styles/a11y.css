@@ -1,0 +1,24 @@
+/* focus 스타일링 */
+:focus {
+  outline: 0;
+}
+
+:focus-visible {
+  --ring-color: var(--primary);
+
+  box-shadow: 0 0 2px 1px var(--ring-color);
+  border-radius: 2px;
+}
+
+/* 숨김 콘텐츠 */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
