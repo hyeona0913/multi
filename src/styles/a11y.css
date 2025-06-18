@@ -11,7 +11,7 @@
 }
 
 /* 숨김 콘텐츠 */
-.sr-only {
+.a11y-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -21,4 +21,6 @@
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+  /* clip-path: polygon(0 0, 0 0, 0 0); */
+  clip-path: :inset(50%)
 }
