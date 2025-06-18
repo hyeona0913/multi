@@ -1,6 +1,20 @@
-body{
-  color : light-dark(var(--content), var(--white));
-  background-color:light-dark(var(--white), var(--content));
-  font-size:0.875rem;
-  font-family: 'SUIT Variable', sans-serif;
+/* 본문 스타일 */
+body {
+  color: light-dark(var(--content), var(--white));
+  background-color: light-dark(var(--white), var(--content));
+  font-size: 0.875rem;
+  font-family: "SUIT Variable", sans-serif;
+}
+
+/* 목록 스타일 */
+ul,
+li {
+  list-style: none;
+  padding: 0;
+}
+
+/* 하이퍼 링크 스타일 */
+a {
+  text-decoration: none;
+  color: inherit;
 }

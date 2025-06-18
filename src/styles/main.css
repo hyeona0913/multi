@@ -54,5 +54,65 @@
 
 /*  로그인 */
 .login {
-  background-color: orangered;
+  --start: var(--secondary);
+  --end: var(--primary);
+  --shadow: var(--gray-500);
+
+  background-color: var(--end);
+  background-image: radial-gradient(circle at right top, var(--start), var(--end));
+  box-shadow: 5px 5px 0 0 var(--shadow);
+  border-radius: 5px;
+  padding: 12px;
+
+  h2 {
+    margin-bottom: 8px;
+  }
+  .login-wrapper {
+    background-color: var(--white);
+    border-radius: 5px;
+    padding: 8px 8px 4px 8px;
+  }
+  form {
+    padding-right: 58px;
+    position: relative;
+
+    .input:first-child {
+      margin-bottom: 4px;
+    }
+
+    label {
+      width: 4em;
+    }
+
+    button {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 50px;
+      height: 100%;
+    }
+  }
+  hr {
+    margin: 10px 0 4px;
+    border-top: 1px solid var(--shadow);
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      display: flex;
+      gap: 4px;
+      align-items: center;
+      font-size: 0.8125rem;
+      line-height: 1.5;
+      letter-spacing: -0.02em;
+    }
+    span {
+      color: var(--primary);
+    }
+    a {
+      padding: 4px 0;
+    }
+  }
 }
