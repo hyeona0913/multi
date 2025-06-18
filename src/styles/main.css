@@ -1,9 +1,8 @@
-/* 컨테이너 - auto 마진과 float 레이아웃*/
+/* 컨테이너 - auto 마진과 float 레이아웃 */
 .container {
   --size: 940px;
 
   min-width: calc(var(--size) + 20px);
-  min-inline-size: calc(var(--size) + 20px);
 
   .header,
   .visual,
@@ -11,48 +10,43 @@
   .slogan,
   .footer {
     width: var(--size);
-    inline-size: var(--size);
     margin-left: auto;
     margin-right: auto;
-    margin-inline: auto;
   }
 
   .main {
     padding: 28px 16px;
     display: flow-root;
     min-height: 450px;
-    min-block-size: 450px;
 
     .group {
       float: left;
       height: 100%;
-      block-size: 100%;
+
       &:nth-child(n + 2) {
         margin-left: 44px;
-        margin-inline-start: 44px;
       }
     }
+
     .group1 {
       width: 250px;
-      inline-size: 250px;
     }
+
     .group2 {
       width: 380px;
-      inline-size: 380px;
     }
+
     .group3 {
       width: 190px;
-      inline-size: 190px;
     }
   }
 
   .footer-container {
     width: 100%;
-    inline-size: 100%;
   }
 }
 
-/*  로그인 */
+/* 로그인 */
 .login {
   --start: var(--secondary);
   --end: var(--primary);
@@ -67,11 +61,13 @@
   h2 {
     margin-bottom: 8px;
   }
+
   .login-wrapper {
     background-color: var(--white);
     border-radius: 5px;
     padding: 8px 8px 4px 8px;
   }
+
   form {
     padding-right: 58px;
     position: relative;
@@ -92,10 +88,12 @@
       height: 100%;
     }
   }
+
   hr {
     margin: 10px 0 4px;
     border-top: 1px solid var(--shadow);
   }
+
   ul {
     display: flex;
     justify-content: space-between;
@@ -108,16 +106,18 @@
       line-height: 1.5;
       letter-spacing: -0.02em;
     }
+
     span {
       color: var(--primary);
     }
+
     a {
       padding: 4px 0;
     }
   }
 }
 
-/* 유효섬 검사 배너 링크 */
+/* 유효성 검사 배너 링크 */
 .validation {
   margin-top: 25px;
   display: flex;
@@ -142,6 +142,7 @@
   h2 {
     margin-bottom: 16px;
   }
+
   .card {
     margin-top: 12px;
   }
