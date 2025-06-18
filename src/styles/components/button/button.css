@@ -9,8 +9,32 @@
   font-size: var(--text-size);
   line-height: 1.5;
   letter-spacing: -0.02em;
+  display: flex;
 
   &.primary {
     background-color: var(--primary);
+  }
+}
+
+.gradient {
+  --start: var(--gray-600);
+  --end: var(--gray-700);
+  --angle: 180deg;
+  --size: 24px;
+
+  display: inline-flex;
+  align-items: center;
+  padding: 0 calc(var(--size) / 2);
+  height: var(--size);
+  background-color: var(--end);
+  background-image: linear-gradient(var(--angle), var(--start), var(--end));
+  border-radius: calc(var(--size) / 2);
+
+  &.icon {
+    background-image: url(/src/assets/webcafe/validation_icon.png), linear-gradient(var(--angle), var(--start), var(--end));
+    background-repeat: no-repeat, repeat;
+    background-position: 12px 50%, 0 0;
+    padding-left: 32px;
+    background-size: 12px 12px, 100%;
   }
 }
