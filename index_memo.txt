@@ -10,3 +10,7 @@
 ure snippet 엔터 multi.code-snippets(global)
 
 * markup시 버튼의 경우 <button> 테그 사용을 권장하며 <div>를 사용할 경우 - 자바스크립트에서 keyup 사용, keydown 사용하면 안됨 접근성 에러남
+
+이미지 파일 최적화 CLI방식
+jpg --->avif
+png--->webp  방식으로 최적화

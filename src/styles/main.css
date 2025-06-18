@@ -21,7 +21,7 @@
     padding: 28px 16px;
     display: flow-root;
     min-height: 450px;
-    min-inline-size: 450px;
+    min-block-size: 450px;
 
     .group {
       float: left;
