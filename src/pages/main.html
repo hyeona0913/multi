@@ -15,35 +15,28 @@
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
     />
+    <script type="module" src="/src/js/navigation.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="header" role="banner">
         <h1 class="brand">
           <a href="/" class="logo">
-            <img src="/src/assets/webcafe/logo.png" srcset="/src/assets//webcafe/logo.webp" alt="web cafe" />
+            <img src="/src/assets/webcafe/logo.png" srcset="/src/assets/webcafe/logo.webp" alt="web cafe" />
           </a>
         </h1>
         <ul class="lnb">
           <li><a href="/">홈</a></li>
-          <li>
-            <span aria-hidden="true">:<a href="/">로그인</a></span>
-          </li>
-          <li>
-            <span aria-hidden="true">:<a href="/">회원가입</a></span>
-          </li>
-          <li>
-            <span aria-hidden="true">:<a href="/">사이트맵</a></span>
-          </li>
-          <li>
-            <span aria-hidden="true">:<a href="/">english</a></span>
-          </li>
+          <li><span aria-hidden="true">:</span><a href="/">로그인</a></li>
+          <li><span aria-hidden="true">:</span><a href="/">회원가입</a></li>
+          <li><span aria-hidden="true">:</span><a href="/">사이트맵</a></li>
+          <li><span aria-hidden="true">:</span><a href="/">english</a></li>
         </ul>
         <div class="navigation" role="navigation">
           <h2 class="a11y-hidden">메인 메뉴</h2>
           <div class="main-menu tabs">
             <div role="tablist">
-              <button id="tab-1" type="button" role="tab" aria-selected="true" aria-controls="tabpanel-1">
+              <button id="tab-1" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-1">
                 <span class="focus">HTML에 대해</span>
               </button>
               <button id="tab-2" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-2" tabindex="-1">
@@ -62,7 +55,7 @@
                 <span class="focus">자료실</span>
               </button>
             </div>
-            <div id="tabpanel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1">
+            <div id="tabpanel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1" class="is-hidden">
               <ul>
                 <li><a href="/">HTML5 소개</a></li>
                 <li><a href="/">레퍼런스</a></li>
@@ -107,7 +100,7 @@
           </div>
         </div>
       </div>
-      <div class="visual" role="banner">비쥬얼</div>
+      <div class="visual"></div>
       <div class="main" role="main">
         <div class="group group1">
           <div class="login">
@@ -120,9 +113,9 @@
                 </div>
                 <div class="input">
                   <label for="userPwd">비밀번호</label>
-                  <input type="password" name="userPwd" id="userPwd" required placeholder="8자리 이상" />
+                  <input type="password" name="userPwd" id="userPwd" required placeholder="8자리 이상" title="숫자, 영문 소문자, 특수문자를 포함한 8자리 이상" />
                 </div>
-                <button type="button" class="button primary">로그인</button>
+                <button type="submit" class="button primary">로그인</button>
               </form>
               <hr />
               <ul>
@@ -132,22 +125,22 @@
             </div>
           </div>
           <div class="validation">
-            <h2 class="a11y-hidden">유효성검사 배너</h2>
-            <a href="/" rel="noopener noreferrer" target="_blank" titie="마크업 유효성 검사 사이트로 이동" class="icon gradient">W3C Markup validation</a>
-            <a href="/" rel="noopener noreferrer" target="_blank" titie="css 유효성 검사 사이트로 이동" class="icon gradient">CSS validation Serverice</a>
+            <h2 class="a11y-hidden">유효성 검사 배너</h2>
+            <a href="/" rel="noopener noreferrer" target="_blank" title="마크업 유효성 검사 사이트로 이동" class="icon gradient">W3C Markup Validation</a>
+            <a href="/" rel="noopener noreferrer" target="_blank" title="CSS 유효성 검사 사이트로 이동" class="icon gradient">CSS Validation Service</a>
           </div>
           <div class="term gradient-styling">
             <h2><span class="heading text-large">웹 관련 용어</span></h2>
             <div class="card cross">
               <div class="card-content">
                 <em>웹 표준 이란?</em>
-                <p>W3C 단체에서 규정한 웹 기술 사양에 대한 규칙을 말하며 표준 규격은..</p>
+                <p>W3C 단체에서 규정한 웹 기술 사양에 대한 규칙을 말하며 표준 규격은...</p>
               </div>
               <img class="card-thumbnail" src="/src/assets/webcafe/web_standards.png" srcset="/src/assets/webcafe/web_standards.webp" alt="" />
             </div>
             <div class="card">
               <div class="card-content">
-                <em>웹 접근성 이란?</em>
+                <em>웹 접근성이란?</em>
                 <p>모든 사용자가 신체적.환경적 조건에 관계없이 웹 사이트에서 제공하는...</p>
               </div>
               <img class="card-thumbnail" src="/src/assets/webcafe/web_accessibility.png" srcset="/src/assets/webcafe/web_accessibility.webp" alt="" />
@@ -178,7 +171,6 @@
         </div>
         <div class="group group3">그룹3</div>
       </div>
-
       <div class="slogan" role="article">슬로건</div>
       <div class="footer-container">
         <div class="footer" role="contentinfo">푸터</div>
