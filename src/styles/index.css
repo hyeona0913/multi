@@ -2,5 +2,6 @@
 @import "./theme.css";
 @import "./base.css";
 @import "./a11y.css";
-@import "./components/components.css";
 @import "./utils.css";
+@import "./animation.css";
+@import "./components/components.css";

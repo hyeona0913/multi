@@ -24,3 +24,17 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible
 
 *메인 lnb의 경우 tag UI를 사용하는 트렌드 임(웹접근성 이슈로)
 예시 사이트 대한항공 참조
+
+* px to rem : font px단위를 rem 단위로 변경해주는 확장팩 (alt + z)
+
+* CSS Animation 성능 개선(gpu 가속)을 위해 margin, padding, position:ablsolute 보다 translate, transform을 권장
+* Animation 기능을 사용하지 않는 방법 
+  - 예시코드 
+  @media (prefers-reduced-motion: reduce) {
+    &::before,
+    &::after {
+      animation: none;
+    }
+  }
+
+* 최신 CSS 트렌트 확인 가능 URL(https://css-tricks.com/)
