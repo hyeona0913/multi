@@ -11,6 +11,16 @@ ure snippet 엔터 multi.code-snippets(global)
 
 * markup시 버튼의 경우 <button> 테그 사용을 권장하며 <div>를 사용할 경우 - 자바스크립트에서 keyup 사용, keydown 사용하면 안됨 접근성 에러남
 
-이미지 파일 최적화 CLI방식
-jpg --->avif
-png--->webp  방식으로 최적화
+* 이미지 파일 최적화 CLI방식 
+- jpg --->avif
+- png--->webp  방식으로 최적화
+url: https://www.npmjs.com/package/simple-webp-converter
+
+* 웹접근성 focus-visible  관련 링크
+https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible
+
+* git을 통해 라이브서버 구동
+@layer 지정으로 css 우선순위 지정 
+
+*메인 lnb의 경우 tag UI를 사용하는 트렌드 임(웹접근성 이슈로)
+예시 사이트 대한항공 참조
