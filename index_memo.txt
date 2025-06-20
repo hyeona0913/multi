@@ -20,16 +20,17 @@ url: https://www.npmjs.com/package/simple-webp-converter
 https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible
 
 * git을 통해 라이브서버 구동
-@layer 지정으로 css 우선순위 지정 
+* @layer 지정으로 css 우선순위 지정 
 
-*메인 lnb의 경우 tag UI를 사용하는 트렌드 임(웹접근성 이슈로)
-예시 사이트 대한항공 참조
+* 메인 lnb의 경우 (웹접근성 이슈로) tag UI를 사용하는 트렌드 임
+(tab UI 방식 예시 사이트 대한항공 참조)
 
 * px to rem : font px단위를 rem 단위로 변경해주는 확장팩 (alt + z)
 
 * CSS Animation 성능 개선(gpu 가속)을 위해 margin, padding, position:ablsolute 보다 translate, transform을 권장
+
 * Animation 기능을 사용하지 않는 방법 
-  - 예시코드 
+ - 예시코드 
   @media (prefers-reduced-motion: reduce) {
     &::before,
     &::after {
@@ -38,3 +39,12 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible
   }
 
 * 최신 CSS 트렌트 확인 가능 URL(https://css-tricks.com/)
+
+* 태그사용 권장예시
+ - 날짜, 시간을 나타내는 경우에는 time 태그를 사용함
+    (datetime="2025-06-20T09:15:30" 속성지정)
+ - required 필수항목으로 지정
+ - aria-hidden="true" 스크린 리더에서 항목을 읽지 않음
+ - figure 의 경우 figcaption 에 이미지 타이틀을 입력하기 때문에 alt="" 대체텍스트 입력하지 않아도됨
+-  grid 라인기반, 네임기반  두가지 스타일사용
+- button 은 인터렉티브 요소 이므로 aria-label="" 속성을 사용

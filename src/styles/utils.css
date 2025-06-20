@@ -11,3 +11,14 @@
   background-color: var(--end);
   background-image: linear-gradient(var(--angle), var(--start), var(--end));
 }
+/* 더보기 링크 */
+.more {
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+
+  [class^="fa"] {
+    color: var(--accent-green);
+    font-weight: 700;
+  }
+}

@@ -8,7 +8,7 @@ body {
 
 /* 목록 스타일 */
 ul,
-li {
+ol {
   list-style: none;
   padding: 0;
 }
